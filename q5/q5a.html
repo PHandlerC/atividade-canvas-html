@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <canvas width="1000" height="600"
+        style="background-color:white">
+        </canvas>
+
+        <script>
+            let canvas = document.querySelector('canvas');
+            let context = canvas.getContext('2d');
+
+            //(x, y, width, height)
+            //context.fillStyle = 'blue'
+            //context.fillRect(150, 150, 250, 250);
+
+            context.beginPath();
+            context.rect(100, 150, 300, 200);
+            context.lineWidth = 3;
+            context.strokeStyle = '#2f528f';
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(250, 175);
+            context.lineTo(180, 300);
+            context.lineTo(320, 300);
+            context.closePath();
+            context.fillStyle = '#4472c4';
+            context.fill();
+
+            context.beginPath();
+            context.arc(550, 250, 100, 0, 2*Math.PI);
+            context.lineWidth = 3;
+            context.stroke();
+
+            context.beginPath();
+            context.rect(490, 190, 120, 120);
+            context.lineWidth = 3;
+            context.fillStyle = '#4472c4';
+            context.fill();
+            context.strokeStyle = '#2f528f';
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(750, 175);
+            context.lineTo(680, 300);
+            context.lineTo(820, 300);
+            context.closePath();
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(830, 175);
+            context.lineTo(780, 300);
+            context.lineTo(900, 300);
+            context.closePath();
+            context.stroke();
+
+        </script>
+    </body>
+</html>

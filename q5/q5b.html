@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <canvas width="900" height="700" style="border:1px solid black">
+    </canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+
+        //(x, y, width, height)
+        //context.fillStyle = 'blue'
+        //context.fillRect(150, 150, 250, 250);
+
+        for (let i = 0; i < 6; i++) {
+            for (let j = 0; j < 3; j++) {
+                context.beginPath();
+                context.rect(50 + (80 * i), 50 + (80 * j), 80, 80);
+                context.strokeStyle = '#2f528f';
+                context.stroke();
+
+                context.beginPath();
+                context.beginPath();
+                context.moveTo(90 + (80 * i), 60 + (80 * j));
+                context.lineTo(120 + (80 * i), 120 + (80 * j));
+                context.lineTo(60 + (80 * i), 120 + (80 * j));
+                context.closePath();
+                context.strokeStyle = '#2f528f';
+                context.stroke();
+            }
+        }
+    </script>
+</body>
+
+</html>
