@@ -1,0 +1,14 @@
+Questões
+Q1 – Com suas palavras descreva o que é a DOM e qual sua relação com o HTML?
+R - DOM (significado Document Object Model) é um arquivo modelo de acesso a um documento.
+Assim, ao se acessar uma página web HTML, exite um arquivo DOM em forma de árvore, de plataforma e linguagens neutras, que permite a scripts e programas que o conteúdo da página possa ser atualizado ou acessado, seja em termos de estrutura do código ou de estlização.
+
+Q2 – O que é o canvas HTML?
+R  - É um container de desenhos gráficos dentro do HTML que utiliza JavaScript para renderizar linhas, círculos, imagens, texto e outras representaçõs gráficas.
+
+Q3 – Quais as linguagens e tecnologias comumente envolvidas no desenvolvimento de produtos baseados em
+canvas html?
+R  - São mais comumente usadas HTML, CSS e JavaScript, sendo esta última qual faz a renderização das imagens
+
+Q4 – Explique para que serve o código “document.getElementById()”
+R  - É um método que retorna um elemento especificado dentro deste, retornando 'null' caso o elemento especificado não exista
